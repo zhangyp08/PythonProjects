@@ -1,0 +1,100 @@
+#!/usr/bin/python
+# encoding:utf-8  #如果要显示中文就需要加上utf-8的编码格式
+
+__author__="Yuping"
+
+def foo():
+    print "Hello World!"
+    if(True):
+        print "Hello world again!"
+
+foo()
+
+#a=raw_input("Input a number:")
+#print type(a)   #because it's str, the value always larger than 10
+#int(a)
+
+a=5
+
+if a >= 10:
+    print "a >= 10"
+    print a
+elif a<10 and a>0:
+    print "0<a<10"
+else:
+    print "a<10"
+print "##########################for ################################"
+
+#for i in range(100):
+#    print i
+#print "########################while ##################################"
+
+a=0
+while a<10:
+    print a
+    a=a+1
+
+print "########################function ##################################"
+def plus(a,b):
+    print a+b
+
+plus(3,1)
+
+s=lambda x,y:x+y
+print s(3,5)
+
+print "########################class##################################"
+class Foo(object):
+    def __init__(self, name, age):
+        self.name=name
+        self.age=age
+
+    def say(self):
+        print "Name is " + self.name
+        print "Age is " + str(self.age)  ## 如果不强制把int变成str则会报错，因为str不能+int类型
+
+    def __del__(self):
+        print "Delete..."
+
+Foo1=Foo("John",18)
+Foo1.say()
+
+print "########################元组 tuple  ##################################"
+
+s=(1,2,3)
+print s
+s=(1,'aa',None)  #any type
+print s
+
+print "############################list  ##################################"
+
+l=[1,2,3,"test"]
+print l
+
+print "############################dict  ##################################"
+
+d={1:"a",2:"b"}
+print d[2]
+print d
+
+l=[[1],[1,1]]
+l1=[1]*3
+l.append(l1)
+print l
+
+print "This is test "
+print "This is test 2"
+
+print "This is test ",
+print "This is test 2"
+
+l=[[1,2],[1,2,3,4]]
+length=len(l[1])
+print "length is: ", length
+t=12345
+length=len(str(t))
+print "Length t=12345 is: ", length
+
+T=()
+T=(1,2)
+print T
