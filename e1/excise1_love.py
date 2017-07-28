@@ -20,3 +20,4 @@ def love_print():
     print "       ****"
     print "        **"
 
+love_print()
