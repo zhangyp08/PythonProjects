@@ -1,4 +1,4 @@
-aaaaaaa
+aaaaaa
 bbbbbbb
 ccccccc
 from master
@@ -7,3 +7,4 @@ from hotfix_
 test"pull"
 test git stash
 test
+I'm going to test stash because I found a problem
