@@ -6,3 +6,4 @@ test"stash
 from hotfix_
 test"pull"
 test git stash
+test
